@@ -55,10 +55,11 @@ Instructions:
    2. df \= pd.read\_csv('facteus\_10k\_user\_panel.csv')  
 3. Text Preprocessing  
    1. Use re to clean and preprocess text  
-   2. CountVectorizer and TfidfVectorizer convert text data into numeric vectors  
+   2. Use confusion matrices to determine accuracy  
 4. Data Scaling and Dimensionality Reduction  
-   1. Normalize the TF-IDF vectors with StandardScaler  
-   2. Reduce dimensions to 2D using TSNE for visualization  
+   1. Use Euclidean distance to determine spending archetypes by amount for merchants
+   2. Normalize the clusters with StandardScaler  
+   3. Reduce dimensions to 2D using TSNE for visualization  
 5. Clustering  
    1. Perform clustering using KMeans with k=10  
    2. Generate a Voronoi diagram using Voronoi from scipy.spatial and plot it using voronoi\_plot\_2d   
